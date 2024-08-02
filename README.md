@@ -1,4 +1,4 @@
-# Please follow step to run the project
+# Please follow this steps to run the project
 
 ### `npm install`
 
