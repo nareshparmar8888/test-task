@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Box, Typography } from '@mui/material';
+import NotificationButton from './components/NotificationButton';
+import NotificationList from './components/NotificationList';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Typography variant="h3" gutterBottom>
+        Notification System
+      </Typography>
+      <Box display="flex" mb={2}>
+        <NotificationButton label="Button 1" />
+        <NotificationButton label="Button 2" />
+        <NotificationButton label="Button 3" />
+      </Box>
+      <NotificationList />
+    </Container>
   );
-}
+};
 
 export default App;
